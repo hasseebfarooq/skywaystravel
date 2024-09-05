@@ -26,89 +26,113 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
+
 <body class="index-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #313340;">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename" style="font-size: 2.2rem; margin-left: 0.5rem;">
           <span style="color: #ffcc00;">S</span>KYWAYS <span style="color: #ffcc00;">E</span>XPRESS
         </h1>
       </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+          aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
-  <main class="main">
+
+  <main class="main ">
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="carousel-container text-center">
-            <h2 class="animate__animated animate__fadeInDown">
-              Welcome to <span style="color: #ffcc00;">SKYWAYS EXPRESS</span> Travel & Tours
-            </h2>
-            <p class="animate__animated animate__fadeInUp">
-              Enjoy the best of comfort and fun with Skyways Express. We plan trips that make Unforgettable memories,
-              whether
-              you want peace or adventure.
-            </p>
-            <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto"
-              style="background-color: #000000; color: #ffcc00; border-radius: 30px;">Discover More</a>
+    <section id="hero" class="hero dark-background ">
+      <div id="hero-carousel" class="carousel slide carousel-fade " data-bs-ride="carousel" data-bs-interval="5000">
+        <!-- Carousel Items -->
+        <div class="carousel-inner container">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center min-vh-100">
+              <div class="text-center">
+                <h2 class="animate__animated animate__fadeInDown text-light">
+                  Welcome to <span class="text-warning">SKYWAYS EXPRESS</span> Travel & Tours
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Enjoy the best of comfort and fun with Skyways Express. We plan trips that make unforgettable
+                  memories, whether you want peace or adventure.
+                </p>
+                <a href="#services" class="btn btn-warning btn-lg animate__animated animate__fadeInUp">Discover More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center min-vh-100">
+              <div class="text-center">
+                <h2 class="animate__animated animate__fadeInDown">Discover the Wonders of</h2>
+                <h3 class="text-warning animate__animated animate__fadeInDown">Dubai, Malaysia, & Thailand</h3>
+                <p class="animate__animated animate__fadeInUp">
+                  Journey through the dazzling streets of Dubai, the vibrant culture of Malaysia, and the exotic beauty
+                  of Thailand. Enjoy our exclusive travel packages that offer unique adventures and luxury experiences
+                  across these amazing destinations.
+                </p>
+                <a href="#faq" class="btn btn-warning btn-lg animate__animated animate__fadeInUp">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center min-vh-100">
+              <div class="text-center">
+                <h2 class="animate__animated animate__fadeInDown">Your Journey, Our Expertise</h2>
+                <p class="animate__animated animate__fadeInUp">
+                  At <span class="text-warning">SKYWAYS EXPRESS</span>, we make travel easy and special for you. Whether
+                  it's Hajj, Umrah, Ziyarat, studying abroad, or an adventure, we offer great packages and reliable
+                  service to make your journey memorable.
+                </p>
+                <a href="#about" class="btn btn-warning btn-lg animate__animated animate__fadeInUp">Start Your
+                  Adventure</a>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="carousel-container text-center"><br><br><br>
-            <h2 class="animate__animated animate__fadeInDown">
-              Discover the Wonders of</h2> <h3> <span style="color: #ffcc00;">Dubai, Malaysia, & Thailand</span>
-              </h3>
-            <p class="animate__animated animate__fadeInUp">
-              <h6>
-                Experience the Magic with <span style="color: #ffcc00;">SKYWAYS EXPRESS</span>
-              </h6>
-              <p>
-                Journey through the dazzling streets of Dubai, the vibrant culture of Malaysia, and the exotic beauty of Thailand. 
-                Enjoy our exclusive travel packages that offer unique adventures and luxury experiences across these amazing destinations.
-              </p>
-            </p>
-            <a href="#faq" class="btn-get-started animate__animated animate__fadeInUp scrollto"
-              style="background-color: #000000; color: #ffcc00; border-radius: 30px;">Learn More</a>
-          </div>
-        </div>
-        
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="carousel-container text-center">
-            <h2 class="animate__animated animate__fadeInDown">
-              Your Journey, Our Expertise
-            </h2>
-            <p class="animate__animated animate__fadeInUp">
-              At <span style="color: #ffcc00;">SKYWAYS EXPRESS</span>, we make travel easy and special for you.
-              </h2>
-              Whether it's Hajj, Umrah, Ziyarat, studying abroad, or an adventure, we offer great packages and reliable
-              service to make your journey memorable.
-            </p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto"
-              style="background-color: #000000; color: #ffcc00; border-radius: 30px;">Start Your Adventure</a>
-          </div>
-        </div>
+
         <!-- Carousel Controls -->
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       <!-- Hero Waves SVG -->
       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none">
@@ -125,236 +149,288 @@
           <use xlink:href="#wave-path" x="50" y="9" style="fill: rgba(60, 58, 58, 0.7);"></use>
         </g>
       </svg>
-    </section><!-- /Hero Section -->
+    </section>
   </main>
-  
+  <br>
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <!-- Section Title -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h1 style="font-size: 3rem; font-weight: bold; color: #333;">About Us</h1>
+    </div>
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 style="font-size: 2.5rem; font-weight: 700; color: #333;">Welcome to Skyways Travel & Tours</h2>
+          <p class="lead" style="font-size: 1.2rem; color: #555;">
+            At <strong>Skyways Tours and Travel</strong>, we are dedicated to turning your travel dreams into reality.
+            With our extensive experience in the travel industry, we offer a curated selection of travel experiences
+            tailored to meet your every need. Whether you're looking for luxury escapes, spiritual journeys, or
+            adventurous explorations, we ensure that every trip with us is truly exceptional.
+          </p>
+        </div>
+      </div>
+      <br>
+      <!-- Our Mission -->
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <h2 style="font-size: 2rem; font-weight: 600; color: #000;">Our Mission</h2>
+          <p style="font-size: 1.2rem; color: #555;">
+            Our mission is simple: to provide you with memorable and comfortable travel experiences that are customized
+            to your preferences. We are committed to excellence in every aspect of our service, ensuring that your
+            journey with us is seamless and extraordinary.
+          </p>
+        </div>
+      </div>
+      <br>
+      <!-- Our Values -->
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000;">Our Values</h3>
+          <p style="font-size: 1.2rem; color: #555;">
+            At the core of <strong>Skyways Tours and Travel</strong> are our values: integrity, quality, and customer
+            satisfaction. We are dedicated to providing transparent and honest services while delivering travel
+            experiences that not only meet but exceed your expectations.
+          </p>
+        </div>
+      </div>
+      <br>
+      <!-- Our Expertise -->
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000;">Our Expertise</h3>
+          <p style="font-size: 1.2rem; color: #555;">
+            With our deep industry knowledge and a network of global partners, we offer a wide range of travel services,
+            including:
+          </p>
+          <ul class="list-unstyled" style="font-size: 1.1rem; color: #555;">
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Customized travel packages for diverse
+              destinations</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Expert guidance for spiritual journeys,
+              adventure tours, and luxury escapes</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Comprehensive support for visa,
+              accommodation, and travel arrangements</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <!-- Why Choose Us -->
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000;">Why Choose Us?</h3>
+          <p style="font-size: 1.2rem; color: #555;">
+            Choosing <strong>Skyways Travel & Tours</strong> means opting for excellence. We combine our extensive
+            industry knowledge with a genuine passion for travel to deliver experiences that are uniquely tailored to
+            you. Trust us to handle the details while you focus on creating unforgettable memories.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Services Section -->
-<section id="services" class="services section">
-  <!-- Section Title -->
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h1 style="font-size: 3.5rem; font-weight: bold; color: #333; margin-bottom: 20px;">Our Services</h1>
-  </div>
+  <section id="services" class="services section">
+    <!-- Section Title -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h1 style="font-size: 3.5rem; font-weight: bold; color: #333; margin-bottom: 20px;">Our Services</h1>
+    </div>
 
-  <div class="container" data-aos="fade-up">
-    <!-- Introduction Section -->
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <div class="row mt-3">
-          <div class="col-lg-12">
-            <div class="spacer" style="height: 0.5cm;"></div>
+    <div class="container" data-aos="fade-up">
+      <!-- Introduction Section -->
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="row mt-3">
+            <div class="col-lg-12">
+              <div class="spacer" style="height: 0.5cm;"></div>
+            </div>
           </div>
-        </div>
-        
-        <p class="lead" style="font-size: 1.2rem; color: #333;">
-          Discover the world with <strong>Skyways Tours and Travel</strong>, where luxury meets affordability. Whether you're on a spiritual journey or seeking the thrill of nature, our meticulously crafted packages cater to your every need.
-        </p><div class="row mt-3">
-          <div class="col-lg-12">
-            <div class="spacer" style="height: 2cm;"></div>
+
+          <p class="lead" style="font-size: 1.2rem; color: #333;">
+            Discover the world with <strong>Skyways Tours and Travel</strong>, where luxury meets affordability. Whether
+            you're on a spiritual journey or seeking the thrill of nature, our meticulously crafted packages cater to
+            your every need.
+          </p>
+          <div class="row mt-3">
+            <div class="col-lg-12">
+              <div class="spacer" style="height: 2cm;"></div>
+            </div>
           </div>
+
         </div>
-        
       </div>
-    </div>
 
-    <!-- Hajj Section -->
-<div class="row mt-5">
-  <div class="col-lg-6 order-lg-1">
-    <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Unforgettable Spiritual Journeys</h3>
-    <p style="font-size: 1.1rem; color: #000000;">
-      Embark on a once-in-a-lifetime spiritual experience with our all-inclusive <strong>Hajj and Umrah</strong> packages. We ensure a hassle-free pilgrimage with top-notch services, guiding you every step of the way.
-    </p>
-    <ul class="list-unstyled" style="font-size: 1rem; color: #333;">
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> VIP arrangements for a comfortable and peaceful journey</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Guided tours with experienced scholars</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Affordable packages tailored to meet your budget</li>
-    </ul>
-  </div>
-  <div class="col-lg-6 order-lg-2 text-center">
-    <img src="assets/img/hajh.jpg" class="img-fluid rounded" style="width: 60%; height: auto; border-radius: 10px;" alt="Hajj and Umrah">
-  </div>
-</div>
-
-<!-- Spacer -->
-<div class="row mt-3">
-  <div class="col-lg-12">
-    <div class="spacer" style="height: 3cm;"></div>
-  </div>
-</div>
-
-<!-- Ziyarat Tours Section -->
-<div class="row mt-5">
-  <div class="col-lg-6 order-lg-1 text-center">
-    <img src="assets/img/zia.jfif" class="img-fluid rounded" style="width: 50%; height: auto; border-radius: 15px;" alt="Ziyarat Tours">
-  </div>
-  <div class="col-lg-6 order-lg-2">
-    <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Ziyarat Tours</h3>
-    <p style="font-size: 1.1rem; color: #000000;">
-      Experience the sacred sites of Islam with our meticulously organized <strong>Ziyarat Tours</strong>. We provide:
-    </p>
-    <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Visits to holy places in Iraq, Iran, and Syria</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Comfortable accommodations near all key sites</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Spiritual guidance throughout the journey</li>
-    </ul>
-  </div>
-</div>
-
-
-<!-- Spacer -->
-<div class="row mt-3">
-  <div class="col-lg-12">
-    <div class="spacer" style="height: 4cm;"></div>
-  </div>
-</div>
-  <!-- Explore Dubai, Malaysia, and Thailand Section -->
-<div class="row mt-4">
-  <div class="col-lg-6 order-lg-1">
-    <h4 style="font-size: 2rem; font-weight: 600; color: #000000;">Discover the Wonders of Dubai, Malaysia, and Thailand</h4>
-    <p style="font-size: 1.1rem; color: #000000;">
-      Embark on an unforgettable journey through <strong>Dubai</strong>, <strong>Malaysia</strong>, and <strong>Thailand</strong> with our premium travel packages. We offer unparalleled experiences in these vibrant destinations, showcasing:
-    </p>
-    <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Dubai</strong> - Marvel at the grandeur of the Burj Khalifa and indulge in luxury shopping and entertainment</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Malaysia</strong> - Explore the stunning landscapes of Langkawi, the vibrant culture of Kuala Lumpur, and the lush rainforests of Borneo</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Thailand</strong> - Enjoy the exotic beauty of Phuket, the cultural richness of Bangkok, and the serene beaches of Krabi</li>
-    </ul>
-  </div>
-  <div class="col-lg-6 order-lg-2 text-center mt-4">
-    <img src="assets/img/dubi.png" class="img-fluid rounded" style="width: 80%; height: auto; border-radius: 10px;" alt="Scenic Beauty of Dubai, Malaysia, and Thailand">
-  </div>
-</div>
-
-<!-- Work Permit Section -->
-
-<div class="row mt-6 align-items-center">
-  <div class="col-lg-6 order-lg-1 text-center">
-    <img src="assets/img/w1.png" class="img-fluid rounded" style="width: 80%; height: auto; border-radius: 10px;" alt="Work Permits">
-  </div>
-  <div class="col-lg-6 order-lg-2">
-    <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Work Permits</h3>
-    <p style="font-size: 1.1rem; color: #000000;">
-      Unlock global opportunities with our <strong>Work Permit</strong> services. We provide exceptional support for securing work permits in top destinations, including:
-    </p>
-    <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Canada</strong> - Access a thriving job market and high quality of life</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Australia</strong> - Explore diverse career opportunities and vibrant culture</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>UK</strong> - Benefit from a robust economy and professional growth</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Spacer -->
-<div class="row mt-3">
-  <div class="col-lg-12">
-    <div class="spacer" style="height: 1cm;"></div>
-  </div>
-</div>
-
-<!-- Study Abroad Section -->
-<div class="row mt-5 align-items-center">
-  <div class="col-lg-6 order-lg-2 text-center">
-    <img src="assets/img/Studying-Abroad.png" class="img-fluid rounded" style="width: 45%; height: auto; border-radius: 15px; margin-top: -20px;" alt="Study Abroad">
-  </div>
-  <div class="col-lg-6 order-lg-1">
-    <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Study Abroad</h3>
-    <p style="font-size: 1.1rem; color: #000000;">
-      Unlock your future with our <strong>Study Abroad</strong> programs. We offer unparalleled support to make your dreams of studying in top international destinations a reality. Our dedicated team ensures you receive the best visa solutions and academic guidance, making your journey smooth and affordable.
-    </p>
-    <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Secure your spot in prestigious universities across the UK, Canada, Australia, and beyond with our expert guidance</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Get the most affordable and efficient visa solutions tailored to your needs</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Enjoy personalized support from start to finish, ensuring a hassle-free application process and smooth transition</li>
-    </ul>
-  </div>
-</div>
-<!-- Spacer -->
-<div class="row mt-3">
-  <div class="col-lg-12">
-    <div class="spacer" style="height: 2cm;"></div>
-  </div>
-</div>
-
-<!-- Air Ticketing Section -->
-<div class="row mt-5 align-items-center">
-  <div class="col-lg-6 order-lg-1 text-center">
-    <img src="assets/img/att-removebg-preview.png" class="img-fluid rounded" style="width: 60%; height: auto; border-radius: 15px;" alt="Air Ticketing">
-  </div>
-  <div class="col-lg-6 order-lg-2">
-    <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Air Ticketing</h3>
-    <p style="font-size: 1.1rem; color: #000000;">
-      Experience the ease and reliability of booking flights with <strong>Skyways Express Travel & Tours</strong>. Our air ticketing service ensures:
-    </p>
-    <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Access to a broad selection of airlines and flight options tailored to your preferences</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Competitive rates and special deals to help you save on your travel expenses</li>
-      <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> A seamless booking experience supported by our dedicated team, ensuring reliability and efficiency</li>
-    </ul>
-  </div>
-</div>
-
-</section>
-<!-- About Section -->
-<section id="about" class="about section">
-  <!-- Section Title -->
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h1 style="font-size: 3rem; font-weight: bold; color: #333;">About Us</h1>
-  </div>
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 style="font-size: 2.5rem; font-weight: 700; color: #333;">Welcome to Skyways Travel & Tours</h2>
-        <p class="lead" style="font-size: 1.2rem; color: #555;">
-          At <strong>Skyways Tours and Travel</strong>, we are dedicated to turning your travel dreams into reality. With our extensive experience in the travel industry, we offer a curated selection of travel experiences tailored to meet your every need. Whether you're looking for luxury escapes, spiritual journeys, or adventurous explorations, we ensure that every trip with us is truly exceptional.
-        </p>
+      <!-- Hajj Section -->
+      <div class="row mt-5">
+        <div class="col-lg-6 order-lg-1">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Unforgettable Spiritual Journeys</h3>
+          <p style="font-size: 1.1rem; color: #000000;">
+            Embark on a once-in-a-lifetime spiritual experience with our all-inclusive <strong>Hajj and Umrah</strong>
+            packages. We ensure a hassle-free pilgrimage with top-notch services, guiding you every step of the way.
+          </p>
+          <ul class="list-unstyled" style="font-size: 1rem; color: #333;">
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> VIP arrangements for a comfortable and
+              peaceful journey</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Guided tours with experienced scholars</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Affordable packages tailored to meet your
+              budget</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 order-lg-2 text-center">
+          <img src="assets/img/hajh.jpg" class="img-fluid rounded"
+            style="width: 60%; height: auto; border-radius: 10px;" alt="Hajj and Umrah">
+        </div>
       </div>
-    </div>
-    <br>
-    <!-- Our Mission -->
-    <div class="row mt-5">
-      <div class="col-lg-12 text-center">
-        <h2 style="font-size: 2rem; font-weight: 600; color: #000;">Our Mission</h2>
-        <p style="font-size: 1.2rem; color: #555;">
-          Our mission is simple: to provide you with memorable and comfortable travel experiences that are customized to your preferences. We are committed to excellence in every aspect of our service, ensuring that your journey with us is seamless and extraordinary.
-        </p>
+
+      <!-- Spacer -->
+      <div class="row mt-3">
+        <div class="col-lg-12">
+          <div class="spacer" style="height: 3cm;"></div>
+        </div>
       </div>
-    </div>
-    <br>
-    <!-- Our Values -->
-    <div class="row mt-5">
-      <div class="col-lg-12 text-center">
-        <h3 style="font-size: 2rem; font-weight: 600; color: #000;">Our Values</h3>
-        <p style="font-size: 1.2rem; color: #555;">
-          At the core of <strong>Skyways Tours and Travel</strong> are our values: integrity, quality, and customer satisfaction. We are dedicated to providing transparent and honest services while delivering travel experiences that not only meet but exceed your expectations.
-        </p>
+
+      <!-- Ziyarat Tours Section -->
+      <div class="row mt-5">
+        <div class="col-lg-6 order-lg-1 text-center">
+          <img src="assets/img/zia.jfif" class="img-fluid rounded"
+            style="width: 50%; height: auto; border-radius: 15px;" alt="Ziyarat Tours">
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Ziyarat Tours</h3>
+          <p style="font-size: 1.1rem; color: #000000;">
+            Experience the sacred sites of Islam with our meticulously organized <strong>Ziyarat Tours</strong>. We
+            provide:
+          </p>
+          <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Visits to holy places in Iraq, Iran, and
+              Syria</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Comfortable accommodations near all key sites
+            </li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Spiritual guidance throughout the journey
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <br>
-    <!-- Our Expertise -->
-    <div class="row mt-5">
-      <div class="col-lg-12 text-center">
-        <h3 style="font-size: 2rem; font-weight: 600; color: #000;">Our Expertise</h3>
-        <p style="font-size: 1.2rem; color: #555;">
-          With our deep industry knowledge and a network of global partners, we offer a wide range of travel services, including:
-        </p>
-        <ul class="list-unstyled" style="font-size: 1.1rem; color: #555;">
-          <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Customized travel packages for diverse destinations</li>
-          <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Expert guidance for spiritual journeys, adventure tours, and luxury escapes</li>
-          <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Comprehensive support for visa, accommodation, and travel arrangements</li>
-        </ul>
+
+
+      <!-- Spacer -->
+      <div class="row mt-3">
+        <div class="col-lg-12">
+          <div class="spacer" style="height: 4cm;"></div>
+        </div>
       </div>
-    </div>
-    <br>
-    <!-- Why Choose Us -->
-    <div class="row mt-5">
-      <div class="col-lg-12 text-center">
-        <h3 style="font-size: 2rem; font-weight: 600; color: #000;">Why Choose Us?</h3>
-        <p style="font-size: 1.2rem; color: #555;">
-          Choosing <strong>Skyways Travel & Tours</strong> means opting for excellence. We combine our extensive industry knowledge with a genuine passion for travel to deliver experiences that are uniquely tailored to you. Trust us to handle the details while you focus on creating unforgettable memories.
-        </p>
+      <!-- Explore Dubai, Malaysia, and Thailand Section -->
+      <div class="row mt-4">
+        <div class="col-lg-6 order-lg-1">
+          <h4 style="font-size: 2rem; font-weight: 600; color: #000000;">Discover the Wonders of Dubai, Malaysia, and
+            Thailand</h4>
+          <p style="font-size: 1.1rem; color: #000000;">
+            Embark on an unforgettable journey through <strong>Dubai</strong>, <strong>Malaysia</strong>, and
+            <strong>Thailand</strong> with our premium travel packages. We offer unparalleled experiences in these
+            vibrant destinations, showcasing:
+          </p>
+          <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Dubai</strong> - Marvel at the
+              grandeur of the Burj Khalifa and indulge in luxury shopping and entertainment</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Malaysia</strong> - Explore the
+              stunning landscapes of Langkawi, the vibrant culture of Kuala Lumpur, and the lush rainforests of Borneo
+            </li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Thailand</strong> - Enjoy the exotic
+              beauty of Phuket, the cultural richness of Bangkok, and the serene beaches of Krabi</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 order-lg-2 text-center mt-4">
+          <img src="assets/img/dubi.png" class="img-fluid rounded"
+            style="width: 80%; height: auto; border-radius: 10px;" alt="Scenic Beauty of Dubai, Malaysia, and Thailand">
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+
+      <!-- Work Permit Section -->
+
+      <div class="row mt-6 align-items-center">
+        <div class="col-lg-6 order-lg-1 text-center">
+          <img src="assets/img/w1.png" class="img-fluid rounded" style="width: 80%; height: auto; border-radius: 10px;"
+            alt="Work Permits">
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Work Permits</h3>
+          <p style="font-size: 1.1rem; color: #000000;">
+            Unlock global opportunities with our <strong>Work Permit</strong> services. We provide exceptional support
+            for securing work permits in top destinations, including:
+          </p>
+          <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Canada</strong> - Access a thriving
+              job market and high quality of life</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>Australia</strong> - Explore diverse
+              career opportunities and vibrant culture</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> <strong>UK</strong> - Benefit from a robust
+              economy and professional growth</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Spacer -->
+      <div class="row mt-3">
+        <div class="col-lg-12">
+          <div class="spacer" style="height: 1cm;"></div>
+        </div>
+      </div>
+
+      <!-- Study Abroad Section -->
+      <div class="row mt-5 align-items-center">
+        <div class="col-lg-6 order-lg-2 text-center">
+          <img src="assets/img/Studying-Abroad.png" class="img-fluid rounded"
+            style="width: 45%; height: auto; border-radius: 15px; margin-top: -20px;" alt="Study Abroad">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Study Abroad</h3>
+          <p style="font-size: 1.1rem; color: #000000;">
+            Unlock your future with our <strong>Study Abroad</strong> programs. We offer unparalleled support to make
+            your dreams of studying in top international destinations a reality. Our dedicated team ensures you receive
+            the best visa solutions and academic guidance, making your journey smooth and affordable.
+          </p>
+          <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Secure your spot in prestigious universities
+              across the UK, Canada, Australia, and beyond with our expert guidance</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Get the most affordable and efficient visa
+              solutions tailored to your needs</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Enjoy personalized support from start to
+              finish, ensuring a hassle-free application process and smooth transition</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Spacer -->
+      <div class="row mt-3">
+        <div class="col-lg-12">
+          <div class="spacer" style="height: 2cm;"></div>
+        </div>
+      </div>
+
+      <!-- Air Ticketing Section -->
+      <div class="row mt-5 align-items-center">
+        <div class="col-lg-6 order-lg-1 text-center">
+          <img src="assets/img/att-removebg-preview.png" class="img-fluid rounded"
+            style="width: 60%; height: auto; border-radius: 15px;" alt="Air Ticketing">
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <h3 style="font-size: 2rem; font-weight: 600; color: #000000;">Air Ticketing</h3>
+          <p style="font-size: 1.1rem; color: #000000;">
+            Experience the ease and reliability of booking flights with <strong>Skyways Express Travel & Tours</strong>.
+            Our air ticketing service ensures:
+          </p>
+          <ul class="list-unstyled" style="font-size: 1rem; color: #000000;">
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Access to a broad selection of airlines and
+              flight options tailored to your preferences</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> Competitive rates and special deals to help
+              you save on your travel expenses</li>
+            <li><i class="bi bi-check-circle" style="color: #ffcc00;"></i> A seamless booking experience supported by
+              our dedicated team, ensuring reliability and efficiency</li>
+          </ul>
+        </div>
+      </div>
+
+  </section>
+
 
 
   <!-- Script for AOS (Animate On Scroll) -->
@@ -366,132 +442,141 @@
   </script>
 
 
- <!-- Faq Section -->
- <section id="faq" class="faq section">
-  <!-- Section Title -->
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h2 style="font-size: 2rem; font-weight: 700; color: #333;">Frequently Asked Questions</h2>
-    <p style="font-size: 1rem; font-weight: 300; color: #666; margin-top: 10px;">
-      Your most common travel queries answered
-    </p>
-  </div><!-- End Section Title -->
+  <!-- Faq Section -->
+  <section id="faq" class="faq section">
+    <!-- Section Title -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h2 style="font-size: 2rem; font-weight: 700; color: #333;">Frequently Asked Questions</h2>
+      <p style="font-size: 1rem; font-weight: 300; color: #666; margin-top: 10px;">
+        Your most common travel queries answered
+      </p>
+    </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <div class="col-12">
-        <div class="accordion" id="accordion-faq">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-1" aria-expanded="true" aria-controls="collapse-faq-1">
-                What are the best travel destinations for national and international tours?
-              </button>
-            </h2>
-            <div id="collapse-faq-1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#accordion-faq">
-              <div class="accordion-body">
-                For national tours, consider visiting scenic spots like Hunza, Skardu, and Fairy Meadows.
-                Internationally, explore places like Dubai, Thailand, and Malaysia for unique experiences and beautiful locations.
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-12">
+          <div class="accordion" id="accordion-faq">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-faq-1" aria-expanded="true" aria-controls="collapse-faq-1">
+                  What are the best travel destinations for national and international tours?
+                </button>
+              </h2>
+              <div id="collapse-faq-1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordion-faq">
+                <div class="accordion-body">
+                  For national tours, consider visiting scenic spots like Hunza, Skardu, and Fairy Meadows.
+                  Internationally, explore places like Dubai, Thailand, and Malaysia for unique experiences and
+                  beautiful locations.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- .accordion-item -->
+            <!-- .accordion-item -->
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-2" aria-expanded="false" aria-controls="collapse-faq-2">
-                How can I apply for study abroad programs?
-              </button>
-            </h2>
-            <div id="collapse-faq-2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordion-faq">
-              <div class="accordion-body">
-                To apply for study abroad programs, start by finding universities that fit your interests. Get your documents like transcripts and recommendations ready, and make sure you meet the visa requirements for the country.
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-faq-2" aria-expanded="false" aria-controls="collapse-faq-2">
+                  How can I apply for study abroad programs?
+                </button>
+              </h2>
+              <div id="collapse-faq-2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordion-faq">
+                <div class="accordion-body">
+                  To apply for study abroad programs, start by finding universities that fit your interests. Get your
+                  documents like transcripts and recommendations ready, and make sure you meet the visa requirements for
+                  the country.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- .accordion-item -->
+            <!-- .accordion-item -->
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-3" aria-expanded="false" aria-controls="collapse-faq-3">
-                What do I need to know for Hajj and Umrah pilgrimages?
-              </button>
-            </h2>
-            <div id="collapse-faq-3" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordion-faq">
-              <div class="accordion-body">
-                For Hajj and Umrah, make sure you understand the religious rituals. You’ll need a valid passport, visa, and vaccinations. It’s also helpful to get advice from experienced travel agencies.
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-faq-3" aria-expanded="false" aria-controls="collapse-faq-3">
+                  What do I need to know for Hajj and Umrah pilgrimages?
+                </button>
+              </h2>
+              <div id="collapse-faq-3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordion-faq">
+                <div class="accordion-body">
+                  For Hajj and Umrah, make sure you understand the religious rituals. You’ll need a valid passport,
+                  visa, and vaccinations. It’s also helpful to get advice from experienced travel agencies.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- .accordion-item -->
+            <!-- .accordion-item -->
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-4" aria-expanded="false" aria-controls="collapse-faq-4">
-                What are the highlights of Ziyarat tours?
-              </button>
-            </h2>
-            <div id="collapse-faq-4" class="accordion-collapse collapse" aria-labelledby="headingFour"
-              data-bs-parent="#accordion-faq">
-              <div class="accordion-body">
-                Ziyarat tours include visits to important religious sites and historical places. You can visit shrines, mosques, and other landmarks in countries like Iraq, Iran, and Saudi Arabia.
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-faq-4" aria-expanded="false" aria-controls="collapse-faq-4">
+                  What are the highlights of Ziyarat tours?
+                </button>
+              </h2>
+              <div id="collapse-faq-4" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordion-faq">
+                <div class="accordion-body">
+                  Ziyarat tours include visits to important religious sites and historical places. You can visit
+                  shrines, mosques, and other landmarks in countries like Iraq, Iran, and Saudi Arabia.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- .accordion-item -->
+            <!-- .accordion-item -->
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-5" aria-expanded="false" aria-controls="collapse-faq-5">
-                What should I know when exploring Dubai, Thailand, and Malaysia?
-              </button>
-            </h2>
-            <div id="collapse-faq-5" class="accordion-collapse collapse" aria-labelledby="headingFive"
-              data-bs-parent="#accordion-faq">
-              <div class="accordion-body">
-                When visiting Dubai, Thailand, or Malaysia, explore both popular spots and hidden gems. Make sure to understand visa requirements and respect local customs to enjoy a smooth trip.
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-faq-5" aria-expanded="false" aria-controls="collapse-faq-5">
+                  What should I know when exploring Dubai, Thailand, and Malaysia?
+                </button>
+              </h2>
+              <div id="collapse-faq-5" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordion-faq">
+                <div class="accordion-body">
+                  When visiting Dubai, Thailand, or Malaysia, explore both popular spots and hidden gems. Make sure to
+                  understand visa requirements and respect local customs to enjoy a smooth trip.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- .accordion-item -->
+            <!-- .accordion-item -->
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-6" aria-expanded="false" aria-controls="collapse-faq-6">
-                How can I book air tickets with Skyways Express?
-              </button>
-            </h2>
-            <div id="collapse-faq-6" class="accordion-collapse collapse" aria-labelledby="headingSix"
-              data-bs-parent="#accordion-faq">
-              <div class="accordion-body">
-                Booking air tickets with Skyways Express is easy. Just contact us with your travel details, and we’ll help you find the best options at affordable rates.
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-faq-6" aria-expanded="false" aria-controls="collapse-faq-6">
+                  How can I book air tickets with Skyways Express?
+                </button>
+              </h2>
+              <div id="collapse-faq-6" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordion-faq">
+                <div class="accordion-body">
+                  Booking air tickets with Skyways Express is easy. Just contact us with your travel details, and we’ll
+                  help you find the best options at affordable rates.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- .accordion-item -->
+            <!-- .accordion-item -->
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section><!-- /Faq Section -->
+  </section><!-- /Faq Section -->
 
   <style>
-  /* Spacer */
-.spacer {
-  height: 3cm; /* Space between sections */
-}
+    /* Spacer */
+    .spacer {
+      height: 3cm;
+      /* Space between sections */
+    }
 
-.row.mt-5 {
-  margin-top: 5rem; /* For consistent spacing above each section */
-}
+    .row.mt-5 {
+      margin-top: 5rem;
+      /* For consistent spacing above each section */
+    }
 
     .accordion-button {
       font-size: 1.1rem;
@@ -575,7 +660,7 @@
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="team-member">
             <div class="member-img">
-              <img src="assets/img/team/sq1.png"  class="img-fluid" alt="">
+              <img src="assets/img/team/sq1.png" class="img-fluid" alt="">
             </div>
             <div class="member-info">
               <h4>Subhan-eKhaliq</h4>
@@ -598,101 +683,87 @@
     </div>
   </section><!-- /Team Section -->
   <section id="contact" class="contact">
-    <div class="container" data-aos="fade" data-aos-delay="100" style="background-color: #ffffff; border-radius: 10px; padding: 30px;">
-        <div class="row">
-            <!-- Left Side: Contact Information -->
-            <div class="col-lg-5">
-                <div class="info-item d-flex flex-column align-items-center mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div class="text-center">
-                        <h3>Address</h3>
-                        <h5><p class="info-text">Office# 101, 102 Ground Floor, Diamond Mall, Gulberg Greens, Islamabad</p></h5>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="info-item d-flex flex-column align-items-center mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-telephone flex-shrink-0"></i>
-                    <div class="text-center">
-                        <h3>Call Us</h3>
-                       <h5> <p class="info-text">0328-5561804</p>
-                        <p class="info-text">0518824124</p></h5>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div class="text-center">
-                        <h3>Email Us</h3>
-                      <h5><p class="info-text">skywaysexpress101@gmail.com</p></h5>
-                    </div>
-                </div><!-- End Info Item -->
+    <div class="container" data-aos="fade" data-aos-delay="100"
+      style="background-color: #ffffff; border-radius: 10px; padding: 30px;">
+      <div class="row">
+        <!-- Left Side: Contact Information -->
+        <div class="col-lg-5">
+          <div class="info-item d-flex flex-column align-items-center mb-4" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div class="text-center">
+              <h3>Address</h3>
+              <h5>
+                <p class="info-text">Office# 101, 102 Ground Floor, Diamond Mall, Gulberg Greens, Islamabad</p>
+              </h5>
             </div>
-            <!-- Right Side: Location Map -->
-            <div class="col-lg-7">
-                <div class="embed-responsive embed-responsive-1by1" data-aos="fade-up" data-aos-delay="500">
-                    <iframe 
-                        class="embed-responsive-item" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.490601129118!2d73.08192781548822!3d33.64150174867057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df955b0454545d%3A0xf9b9cfac129f9f30!2sDiamond%20Mall%20%26%20Residency%2C%20Islamabad!5e0!3m2!1sen!2s!4v1693812253627!5m2!1sen!2s" 
-                        style="border:0; border-radius: 10px; width: 85%; height: 500px; margin-left: 2cm;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex flex-column align-items-center mb-4" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div class="text-center">
+              <h3>Call Us</h3>
+              <h5>
+                <p class="info-text">0328-5561804</p>
+                <p class="info-text">0518824124</p>
+              </h5>
             </div>
+          </div><!-- End Info Item -->
+          <div class="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div class="text-center">
+              <a class="flex-column align-items-center" href="mailto:skywaysexpress101@gmail.com">
+                <h3>Email Us</h3>
+                <h5>
+                  <p class="info-text">skywaysexpress101@gmail.com</p>
+                </h5>
+              </a>
+            </div>
+          </div><!-- End Info Item -->
         </div>
-    </div>
-</section>
-<style>
-.contact {
-    position: relative;
-    background-size: cover;
-    padding: 60px 0;
-    transition: background-image 1s ease-in-out;
-}
-
-.info-item {
-    transition: background-color 0.3s, transform 0.3s;
-}
-.info-item:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Change to a light color on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-.contact {
-    position: relative;
-    background-size: cover;
-    padding: 50px 0;
-    transition: background-image 1s ease-in-out;
-}
-
-.info-item {
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.info-item:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Change to a light color on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-</style>
-<footer id="footer" class="footer dark-background">
-  <div class="container">
-      <h3 class="sitename"><span style="color: #ffcc00;">S</span>KYWAYS <span style="color: #ffcc00;">E</span>XPRESS</h3>
-      <p>Travel made simple, enjoyable, and memorable.</p>
-      <div class="social-links d-flex justify-content-center">
-          <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://wa.me/923285561804" class="social-icon" target="_blank"><i class="bi bi-whatsapp"></i></a>
-      </div>
-      <div class="container">
-          <div class="copyright">
-              <span>&copy; 2024 <strong class="sitename"><span style="color: #ffcc00;">S</span>KYWAYS <span style="color: #ffcc00;">E</span>XPRESS</strong>. All Rights Reserved.</span>
+        <!-- Right Side: Location Map -->
+        <div class="col-lg-7">
+          <div class="embed-responsive embed-responsive-1by1" data-aos="fade-up" data-aos-delay="500">
+            <iframe class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.490601129118!2d73.08192781548822!3d33.64150174867057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df955b0454545d%3A0xf9b9cfac129f9f30!2sDiamond%20Mall%20%26%20Residency%2C%20Islamabad!5e0!3m2!1sen!2s!4v1693812253627!5m2!1sen!2s"
+              style="border:0; border-radius: 10px; width: 85%; height: 500px; margin-left: 2cm;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
+        </div>
       </div>
-  </div>
-</footer>
+    </div>
+  </section>
 
-  <!-- Vendor JS Files -->
+  <footer id="footer" class="footer dark-background">
+    <div class="container text-center">
+      <h3 class="sitename" style="font-size: 1.8rem;"><span style="color: #ffcc00;">S</span>KYWAYS <span
+          style="color: #ffcc00;">E</span>XPRESS</h3>
+      <p>Travel made simple, enjoyable, and memorable.</p>
+
+      <!-- Social Links -->
+      <div class="social-links d-flex justify-content-center mb-3">
+        <a href="https://www.facebook.com" class="social-icon" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" class="social-icon" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://wa.me/923285561804" class="social-icon" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        &copy;
+        <span class="text-warning">S</span>
+        <span class="text-white">KWAYS</span>
+        <span class="text-warning">E</span>
+        <span class="text-white">XPRESS</span>
+        <span class="text-white">All Rights are Reserved</span>
+      </div>
+    </div>
+  </footer> <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -703,4 +774,5 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
