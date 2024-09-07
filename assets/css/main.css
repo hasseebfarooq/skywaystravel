@@ -1166,6 +1166,43 @@ section,
     margin-top: 20px; /* Adjust margin for spacing */
   }
 }
+section-title {
+  border: none; /* Make sure there's no border */
+  background-color: transparent; /* Ensure background is transparent if needed */
+  outline: none; /* Remove any outline */
+}
+.section-title {
+  border: none !important; /* Remove any border */
+  outline: none !important; /* Remove any outline */
+  background-color: transparent !important; /* Ensure background is transparent */
+}
+
+/* Targeting specific elements if necessary */
+.section-title h2,
+.section-title p {
+  border: none !important; /* Remove any border */
+  background-color: transparent !important; /* Ensure background is transparent */
+  outline: none !important; /* Remove any outline */
+}
+
+/* Ensure no box-shadow is applied */
+.section-title {
+  box-shadow: none !important;
+}
+/* Ensure no unwanted styles */
+h2 {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+p {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 
 /* Tablet view adjustments */
 @media (min-width: 576px) and (max-width: 768px) {
