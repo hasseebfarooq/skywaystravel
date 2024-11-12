@@ -27,17 +27,36 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://animate.style/animate.min.css">
+    <style>
+        .carousel-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .carousel-item:nth-child(1) {
+          .carousel-item:nth-child(1) {
+    background-image: url('images/img1.jpg'); /* Image 1 */
+}
+.carousel-item:nth-child(2) {
+    background-image: url('images/img2.jpg'); /* Image 2 */
+}
+.carousel-item:nth-child(3) {
+    background-image: url('images/img3.jpg'); /* Image 3 */
+}
+
+    </style>
+</head>
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #313340;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename" style="font-size: 2.2rem; margin-left: 0.5rem;">
           <span style="color: #ffcc00;">S</span>KYWAYS <span style="color: #ffcc00;">E</span>XPRESS
         </h1>
       </a>
 
-      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
           aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,24 +65,12 @@
 
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -71,12 +78,9 @@
   </header>
 
   <main class="main ">
-    <!-- Hero Section -->
-    <section id="hero" class="hero dark-background ">
-      <div id="hero-carousel" class="carousel slide carousel-fade " data-bs-ride="carousel" data-bs-interval="5000">
-        <!-- Carousel Items -->
+    <section id="hero" class="hero dark-background">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
         <div class="carousel-inner container">
-          <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="d-flex justify-content-center align-items-center min-vh-100">
               <div class="text-center">
@@ -84,48 +88,36 @@
                   Welcome to <span class="text-warning">SKYWAYS EXPRESS</span> Travel & Tours
                 </h2>
                 <p class="animate__animated animate__fadeInUp">
-                  Enjoy the best of comfort and fun with Skyways Express. We plan trips that make unforgettable
-                  memories, whether you want peace or adventure.
+                  Enjoy the best of comfort and fun with Skyways Express. We plan trips that make unforgettable memories.
                 </p>
                 <a href="#services" class="btn btn-warning btn-lg animate__animated animate__fadeInUp">Discover More</a>
               </div>
             </div>
           </div>
-
-          <!-- Slide 2 -->
           <div class="carousel-item">
             <div class="d-flex justify-content-center align-items-center min-vh-100">
               <div class="text-center">
                 <h2 class="animate__animated animate__fadeInDown">Discover the Wonders of</h2>
                 <h3 class="text-warning animate__animated animate__fadeInDown">Dubai, Malaysia, & Thailand</h3>
                 <p class="animate__animated animate__fadeInUp">
-                  Journey through the dazzling streets of Dubai, the vibrant culture of Malaysia, and the exotic beauty
-                  of Thailand. Enjoy our exclusive travel packages that offer unique adventures and luxury experiences
-                  across these amazing destinations.
+                  Journey through the dazzling streets of Dubai and beyond.
                 </p>
                 <a href="#faq" class="btn btn-warning btn-lg animate__animated animate__fadeInUp">Learn More</a>
               </div>
             </div>
           </div>
-
-          <!-- Slide 3 -->
           <div class="carousel-item">
             <div class="d-flex justify-content-center align-items-center min-vh-100">
               <div class="text-center">
                 <h2 class="animate__animated animate__fadeInDown">Your Journey, Our Expertise</h2>
                 <p class="animate__animated animate__fadeInUp">
-                  At <span class="text-warning">SKYWAYS EXPRESS</span>, we make travel easy and special for you. Whether
-                  it's Hajj, Umrah, Ziyarat, studying abroad, or an adventure, we offer great packages and reliable
-                  service to make your journey memorable.
+                  At <span class="text-warning">SKYWAYS EXPRESS</span>, we make travel easy and special for you.
                 </p>
-                <a href="#about" class="btn btn-warning btn-lg animate__animated animate__fadeInUp">Start Your
-                  Adventure</a>
+                <a href="#about" class="btn btn-warning btn-lg animate__animated animate__fadeInUp">Start Your Adventure</a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Carousel Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -135,10 +127,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-      <!-- Hero Waves SVG -->
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none">
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
           <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
         </defs>
@@ -154,7 +143,11 @@
       </svg>
     </section>
   </main>
-  <br>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
 
 
 
@@ -672,9 +665,11 @@
 
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member">
+            <!--
             <div class="member-img">
               <img src="assets/img/team/crop.jpg" class="img-fluid" alt="">
             </div>
+            -->
             <div class="member-info">
               <h4>Sheikh Amaar Abid</h4>
               <span>Chief Executive Officer</span>
@@ -684,9 +679,11 @@
 
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="team-member">
+            <!--
             <div class="member-img">
               <img src="assets/img/team/mdd2.jpg" class="img-fluid" alt="">
             </div>
+            -->
             <div class="member-info">
               <h4>Ameer Hamza </h4>
               <span>Managing Director</span>
@@ -695,9 +692,11 @@
         </div><!-- End Team Member -->
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="team-member">
+            <!--
             <div class="member-img">
               <img src="assets/img/team/sq1.png" class="img-fluid" alt="">
             </div>
+            -->
             <div class="member-info">
               <h4>Subhan-e-Khaliq</h4>
               <span>I.T Head</span>
@@ -706,9 +705,10 @@
         </div><!-- End Team Member -->
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
           <div class="team-member">
+            <!--
             <div class="member-img">
               <img src="assets/img//team/bilal tahir5.jpg" class="img-fluid" alt="">
-            </div>
+            </div>-->
             <div class="member-info">
               <h4>Bilal Tahir Baig</h4>
               <span>Sales & Marketing Head</span>
