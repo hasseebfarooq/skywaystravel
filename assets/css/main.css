@@ -6,6 +6,20 @@
   padding: 60px 0;
   transition: background-image 1s ease-in-out;
 }
+@media (max-width: 767px) { /* Target screens smaller than 768px, usually mobile devices */
+  #team .row {
+    display: flex;
+    flex-direction: column; /* Stack team members vertically */
+    align-items: center;    /* Center items horizontally */
+  }
+
+  #team .team-member {
+    text-align: center;
+    width: 100%;  /* Ensure each member takes full width on mobile */
+    margin-bottom: 20px; /* Add some spacing between team members */
+  }
+}
+
 
 .info-item {
   transition: background-color 0.3s, transform 0.3s;
